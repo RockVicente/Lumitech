@@ -3,7 +3,7 @@ const cancelButton = document.querySelector('.cancel-button');
 const successMessage = document.querySelector('#formSuccess');
 
 
-const whatsappPhone = '258847805911';
+const whatsappPhone = '258867805911';
 
 pedidoForm.addEventListener('submit', event => {
     event.preventDefault();
