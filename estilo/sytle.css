@@ -265,6 +265,13 @@ footer p a:hover{
 }
 
 @media (max-width: 480px){
+    header{
+        justify-content: center;
+    }
+    header div.botao{
+        display:none;
+    }
+
     header ul{
         display: none;
     }
