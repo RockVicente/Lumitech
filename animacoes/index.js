@@ -1,6 +1,6 @@
 const imagem = [
-    'imagens/mouse deitado edit.png',
-    'imagens/mouse parado.png'
+    'imagens/mouse_deitado_edit.webp',
+    'imagens/mouse_parado.webp'
 ];
 
 let index = 0;
@@ -32,4 +32,3 @@ pedidoButtons.forEach(button => {
     });
 });
 
-//rotas de compra
