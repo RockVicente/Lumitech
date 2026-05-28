@@ -1,0 +1,297 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --Corprincipal:#2448FF;
+    --Hoverdestaque:#1636D9;
+    --Fundoprincipal:#F7F8FA;
+    --Fundoescuro:#1E1E1E;
+    --Textoprincipal:#222222;
+    --Textosecundário:#707070;
+    --Bordassuaves:#E5E7Eb;
+    --CTAdestaque:#3B5BFF;
+}
+
+body{
+    font-family:'poppins', sans-serif;
+}
+/*Cabecalho da página */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--Fundoescuro);
+}
+
+header img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+}
+
+header div{
+    padding:10px 10px;
+}
+
+header ul{
+    list-style: none;
+}
+
+header ul > a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: var(--Textosecundário);
+    font-size: 18px;
+}
+
+header ul > a:hover{
+    color:var(--Hoverdestaque);
+    transition: 0.3s;
+}
+
+header button{
+    padding: 10px 20px;
+    background-color: var(--CTAdestaque);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: var(--Hoverdestaque);
+    transition: 0.3s;
+}
+
+/*Conteúdo principal da página*/
+
+main{
+    height: 82vh;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: var(--Fundoescuro);
+}
+
+main section aside{
+    width: 50%;
+    padding: 35px;
+}
+
+main section aside h1{
+    font-size: 50px;
+    color: var(--Fundoprincipal);
+}
+
+main section aside h1 span{
+    color: var(--Corprincipal);
+}
+
+main section aside p{
+    color: var(--Bordassuaves);
+    margin: 20px 0px;
+}
+
+main section aside h3{
+    font-size: 30px;
+    color: var(--Bordassuaves);
+    margin: 20px 0px;
+}
+
+main section aside button{
+    padding: 10px 20px;
+    background-color: var(--CTAdestaque);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+main section aside button:hover{
+    background-color: var(--Hoverdestaque);
+    transition: 0.3s;
+}
+
+main section .imagem{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+main section .imagem img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+main section .imagem img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+#formulario-pedido {
+    padding: 40px 20px;
+    background-color: rgba(36, 72, 255, 0.08);
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h2 {
+    color: var(--Fundoescuro);
+    margin-bottom: 12px;
+}
+
+.form-container p {
+    color: var(--Textosecundário);
+    margin-bottom: 24px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--Textoprincipal);
+    font-weight: 600;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: 1px solid var(--Bordassuaves);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--Textoprincipal);
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.submit-button,
+.cancel-button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: var(--CTAdestaque);
+    color: white;
+}
+
+.submit-button:hover {
+    background-color: var(--Hoverdestaque);
+}
+
+.cancel-button {
+    background-color: #d1d5db;
+    color: var(--Textoprincipal);
+}
+
+.cancel-button:hover {
+    filter: brightness(0.95);
+}
+
+.form-success {
+    margin-top: 18px;
+    color: var(--Corprincipal);
+    font-weight: 600;
+}
+
+/*Rodapé da página*/
+footer{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Fundoescuro);
+}
+
+footer p{
+    color: var(--Textosecundário);
+}
+
+footer p a{
+    text-decoration: none;
+    color: var(--Textosecundário);
+    font-weight: bold;
+}
+
+footer p a:hover{
+    color: var(--Hoverdestaque);
+    transition: 0.3s;
+}
+
+/*Responsividade da página*/
+@media (max-width: 768px){
+    main section{
+        flex-direction: column;
+    }
+
+    main section aside, main section .imagem{
+        width: 100%;
+        text-align: center;
+    }
+
+    main section .imagem img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px){
+    header ul{
+        display: none;
+    }
+
+    main section aside h1{
+        font-size: 30px;
+    }
+
+    main section aside h3{
+        font-size: 20px;
+    }
+
+    main section .imagem img{
+        width: 200px;
+        height: 180px;
+    }
+
+    footer{
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    footer p a{
+        font-size: 14px;
+    }
+}
