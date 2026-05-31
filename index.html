@@ -18,9 +18,9 @@
     <div class="menu">
         <nav>
             <ul>
-                <a href="#">Inicio</a>
-                <a href="#">Produtos</a>
-                <a href="#">Contato</a>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </div>
@@ -40,10 +40,153 @@
                 <strong>Ganhe 1 Mouse Pad Grátis na compra do seu.</strong>
             </p>
             <h3>Por Apenas 1499 MZN</h3>
-            <button class="btn-pedido">Comprar Agora</button>
+            <div class="hero-actions">
+                <button class="btn-pedido">Comprar Agora</button>
+                <button class="btn-saber-mais">Saber Mais</button>
+            </div>
         </aside>
         <div class="imagem">
             <img class="img" src="imagens/mouse_deitado_edit.webp" alt="foto do mouse">
+        </div>
+    </section>
+    <section id="beneficios" class="info-secao hidden">
+        <div class="info-conteudo">
+            <h2>Benefícios do mouse</h2>
+            <div class="beneficios-grid">
+                <div class="beneficio-card">
+                    <h3>Conforto Ergonômico</h3>
+                    <p>Design que se adapta perfeitamente à sua mão, reduzindo fadiga mesmo após longas sessões de uso.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>Precisão Profissional</h3>
+                    <p>Sensor óptico de alta sensibilidade oferece rastreamento preciso para trabalhos que exigem exatidão.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>Conexão Estável</h3>
+                    <p>Tecnologia 2.4 GHz de baixa latência garante resposta instantânea sem interferências.</p>
+                </div>
+                <div class="beneficio-card">
+                    <h3>Bateria de Longa Duração</h3>
+                    <p>Até 30 dias de autonomia com uma única carga, ideal para trabalho contínuo.</p>
+                </div>
+            </div>
+            <div class="cta-section">
+                <button class="btn-comprar-secao">Comprar Agora</button>
+            </div>
+        </div>
+    </section>
+    <section id="caracteristicas" class="info-secao hidden">
+        <div class="info-conteudo">
+            <h2>Características Técnicas</h2>
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <h4>Sensor</h4>
+                    <p>Óptico 6400 DPI ajustável</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Conexão</h4>
+                    <p>Wireless 2.4 GHz, 10m alcance</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Bateria</h4>
+                    <p>Recarregável, até 30 dias</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Peso</h4>
+                    <p>95g (ultra leve)</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Cores</h4>
+                    <p>Preto Elegante</p>
+                </div>
+                <div class="spec-item">
+                    <h4>Compatibilidade</h4>
+                    <p>Windows, macOS, Linux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fotos" class="info-secao fotos-secao hidden">
+        <div class="info-conteudo">
+            <h2>Fotos adicionais</h2>
+            <div class="carousel-container">
+                <button class="carousel-prev" aria-label="Anterior">‹</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <img src="imagens/mouse5_no_bg.webp" alt="mouse vista 1" class="carousel-item">
+                        <img src="imagens/mouse6_no_bg.webp" alt="mouse vista 2" class="carousel-item">
+                        <img src="imagens/mouse7_no_bg.webp" alt="mouse vista 3" class="carousel-item">
+                        <img src="imagens/deitado.webp" alt="mouse deitado" class="carousel-item">
+                    </div>
+                </div>
+                <button class="carousel-next" aria-label="Próximo">›</button>
+            </div>
+        </div>
+    </section>
+    <section id="avaliacoes" class="info-secao hidden">
+        <div class="info-conteudo">
+            <h2>Avaliações de Clientes</h2>
+            <div class="avaliacoes-container">
+                <div class="avaliacao-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Excelente qualidade e conforto. Uso 8 horas por dia e não sinto fadiga."</p>
+                    <p class="cliente-nome">- Marlene</p>
+                </div>
+                <div class="avaliacao-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Precisão impecável. Recomendo para designers e programadores."</p>
+                    <p class="cliente-nome">- Belmiro</p>
+                </div>
+                <div class="avaliacao-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Melhor custo-benefício que já vi. Bateria dura muito mesmo."</p>
+                    <p class="cliente-nome">- Rock Vicente</p>
+                </div>
+            </div>
+            <p class="avaliacao-media">Avaliação média: <strong>4.8/5</strong> (com base em 250+ reviews)</p>
+        </div>
+    </section>
+    <section id="faq" class="info-secao hidden">
+        <div class="info-conteudo">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-toggle" data-faq="1">
+                        <span class="faq-number">1</span>
+                    </button>
+                    <div class="faq-content">
+                        <p><strong>Compatível com quais sistemas?</strong></p>
+                        <p>Windows, macOS, Linux e Android. Funcionará com qualquer dispositivo com receptor USB 2.4 GHz.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-toggle" data-faq="2">
+                        <span class="faq-number">2</span>
+                    </button>
+                    <div class="faq-content">
+                        <p><strong>Inclui cabo de carregamento?</strong></p>
+                        <p>Sim, cabo USB-C incluso. A bateria carrega completamente em aproximadamente 2 horas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-toggle" data-faq="3">
+                        <span class="faq-number">3</span>
+                    </button>
+                    <div class="faq-content">
+                        <p><strong>Qual é a duração da bateria?</strong></p>
+                        <p>Até 30 dias com carga completa em uso normal. Indicador LED de bateria baixa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-toggle" data-faq="4">
+                        <span class="faq-number">4</span>
+                    </button>
+                    <div class="faq-content">
+                        <p><strong>Qual a distância de funcionamento?</strong></p>
+                        <p>Até 10 metros de alcance sem obstáculos com conexão estável 2.4 GHz.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
@@ -54,8 +197,8 @@
     </p>
     <p>
         <a href="#">Instagram |</a>
-        <a href="#">Facebook |</a>
-        <a href="https://wa.me/258867805911">WhatsApp</a>
+        <a href="https://web.facebook.com/profile.php?id=61589314937737" target="_blank">Facebook |</a>
+        <a href="https://wa.me/258867805911" target="_blank">WhatsApp</a>
     </p>
 </footer>
 <script src="animacoes/index.js"></script>
