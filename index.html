@@ -2,54 +2,53 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Bem-vindo à Lumitech</title>
+    <meta name="description" content="Mouse wireless ergonômico com animações interativas, 3D e experiência mobile criativa." />
     <link rel="stylesheet" href="./estilo/sytle.css">
     <link rel="icon" href="imagens/files/favicon.ico" sizes="any">
     <link rel="icon" href="imagens/files/favicon-32x32.png" type="image/png">
     <link rel="apple-touch-icon" href="imagens/files/apple-touch-icon.png">
 </head>
-<body> 
-<!-- Cabeçalho da página -->
-<header>
-    <div class="logo">
+<body>
+<header class="site-header">
+    <a class="logo" href="#">
         <img src="imagens/logo.webp" alt="logo da lumitech">
-    </div>
-    <div class="menu">
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="botao">
-        <button class="btn-pedido">Comprar Agora</button>
-    </div>
+        <span>Lumitech</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="site-nav">
+        <a href="#beneficios">Benefícios</a>
+        <a href="#caracteristicas">Especificações</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#avaliacoes">Reviews</a>
+    </nav>
+    <button class="btn-pedido header-order">Comprar Agora</button>
 </header>
-<!-- Conteúdo principal da página -->
 <main>
-    <section class="conteudo">
-        <aside>
-            <h1>Conforto absoluto & precisão sem fios.</h1>
-            <p>
-                O Mouse Xiaomi Comfort Edition (Preto) foi desenhado para se adaptar 
-                perfeitamente à sua mão, eliminando a fadiga diária. 
-                Desfrute de uma resposta ótica de alta sensibilidade e total liberdade de movimentos.
-                <strong>Ganhe 1 Mouse Pad Grátis na compra do seu.</strong>
-            </p>
-            <h3>Por Apenas 1499 MZN</h3>
+    <section class="hero conteudo">
+        <div class="hero-copy" data-reveal>
+            <span class="eyebrow">Mouse gaming & design</span>
+            <h1>Conforto absoluto <span>&</span> precisão sem fios.</h1>
+            <p>O Mouse Xiaomi Comfort Edition foi desenhado para caber na sua mão, reduzir a fadiga e liberar a sua criatividade em tarefas longas ou jogos intensos.</p>
             <div class="hero-actions">
                 <button class="btn-pedido">Comprar Agora</button>
                 <button class="btn-saber-mais">Saber Mais</button>
             </div>
-        </aside>
-        <div class="imagem">
-            <img class="img" src="imagens/mouse_deitado_edit.webp" alt="foto do mouse">
+        </div>
+        <div class="hero-visual" data-reveal>
+            <div class="visual-frame"></div>
+            <div class="hero-screen"></div>
+            <canvas id="heroCanvas" aria-label="Animação 3D do produto"></canvas>
+            <img class="img hero-model" src="imagens/mouse_deitado_edit.webp" alt="mouse Lumitech">
+            <div class="hero-glow"></div>
         </div>
     </section>
-    <section id="beneficios" class="info-secao hidden">
+    <section id="beneficios" class="info-secao hidden" data-reveal>
         <div class="info-conteudo">
             <h2>Benefícios do mouse</h2>
             <div class="beneficios-grid">
@@ -75,7 +74,7 @@
             </div>
         </div>
     </section>
-    <section id="caracteristicas" class="info-secao hidden">
+    <section id="caracteristicas" class="info-secao hidden" data-reveal>
         <div class="info-conteudo">
             <h2>Características Técnicas</h2>
             <div class="specs-grid">
@@ -106,7 +105,7 @@
             </div>
         </div>
     </section>
-    <section id="fotos" class="info-secao fotos-secao hidden">
+    <section id="fotos" class="info-secao fotos-secao hidden" data-reveal>
         <div class="info-conteudo">
             <h2>Fotos adicionais</h2>
             <div class="carousel-container">
@@ -123,7 +122,7 @@
             </div>
         </div>
     </section>
-    <section id="avaliacoes" class="info-secao hidden">
+    <section id="avaliacoes" class="info-secao hidden" data-reveal>
         <div class="info-conteudo">
             <h2>Avaliações de Clientes</h2>
             <div class="avaliacoes-container">
@@ -146,43 +145,43 @@
             <p class="avaliacao-media">Avaliação média: <strong>4.8/5</strong> (com base em 250+ reviews)</p>
         </div>
     </section>
-    <section id="faq" class="info-secao hidden">
+    <section id="faq" class="info-secao hidden" data-reveal>
         <div class="info-conteudo">
             <h2>Perguntas Frequentes</h2>
             <div class="faq-container">
                 <div class="faq-item">
                     <button class="faq-toggle" data-faq="1">
                         <span class="faq-number">1</span>
+                        Compatibilidade
                     </button>
                     <div class="faq-content">
-                        <p><strong>Compatível com quais sistemas?</strong></p>
                         <p>Windows, macOS, Linux e Android. Funcionará com qualquer dispositivo com receptor USB 2.4 GHz.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-toggle" data-faq="2">
                         <span class="faq-number">2</span>
+                        Cabo de carregamento
                     </button>
                     <div class="faq-content">
-                        <p><strong>Inclui cabo de carregamento?</strong></p>
                         <p>Sim, cabo USB-C incluso. A bateria carrega completamente em aproximadamente 2 horas.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-toggle" data-faq="3">
                         <span class="faq-number">3</span>
+                        Duração da bateria
                     </button>
                     <div class="faq-content">
-                        <p><strong>Qual é a duração da bateria?</strong></p>
                         <p>Até 30 dias com carga completa em uso normal. Indicador LED de bateria baixa.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-toggle" data-faq="4">
                         <span class="faq-number">4</span>
+                        Alcance da conexão
                     </button>
                     <div class="faq-content">
-                        <p><strong>Qual a distância de funcionamento?</strong></p>
                         <p>Até 10 metros de alcance sem obstáculos com conexão estável 2.4 GHz.</p>
                     </div>
                 </div>
@@ -190,17 +189,18 @@
         </div>
     </section>
 </main>
-<!-- Rodapé da página -->
 <footer>
-    <p>
-        Lumetechmz © 2026. Todos os direitos reservados.
-    </p>
-    <p>
-        <a href="#">Instagram |</a>
-        <a href="https://web.facebook.com/profile.php?id=61589314937737" target="_blank">Facebook |</a>
-        <a href="https://wa.me/258867805911" target="_blank">WhatsApp</a>
-    </p>
+    <div class="footer-inner">
+        <p>Lumetechmz © 2026. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="https://web.facebook.com/profile.php?id=61589314937737" target="_blank">Facebook</a>
+            <a href="https://wa.me/258867805911" target="_blank">WhatsApp</a>
+        </div>
+    </div>
 </footer>
-<script src="animacoes/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r161/three.min.js" defer></script>
+<script src="animacoes/index.js" defer></script>
 </body>
 </html>
